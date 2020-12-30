@@ -21,13 +21,13 @@ svg {
 }
 
 .kick-pad {
-  background: rgb(82, 82, 253);
+  background: rgb(162, 162, 248);
 }
 .snare-pad {
-  background: chocolate;
+  background: rgb(228, 156, 105);
 }
 .hihate-pad {
-  background: rgb(207, 87, 111);
+  background: rgb(240, 142, 161);
 }
 
 .kick-pad.active {
@@ -96,4 +96,39 @@ svg {
 select {
   padding: 1rem;
   font-size: 1rem;
+}
+
+@keyframes playTrack {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+.mute.active {
+  background: rgb(180, 180, 180);
+}
+
+.tempo {
+  margin: 3rem;
+  width: 30%;
+}
+.tempo-slider {
+  padding: 0.2rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin: 1rem 0rem;
+  width: 100%;
+  position: relative;
+  background: rgb(88 88 88 / 53%);
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.tempo p {
+  font-size: 1.5rem;
+  margin: 2rem;
+  text-align: center;
 }
