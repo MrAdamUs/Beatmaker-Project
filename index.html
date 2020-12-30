@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Beatmaker</title>
+  </head>
+  <body>
+    <div class="sequencer">
+      <div class="kick-track">
+        <div class="controls">
+          <h1>kick</h1>
+          <button data-track="0" class="mute kick-valume">
+            <i class="fas fa-volume-mute"></i>
+          </button>
+          <select name="kick-select" id="kick-select">
+            <option value="./sounds/kick-classic.wav">
+              Classic Kick
+            </option>
+            <option value="./sounds/kick-808.wav">808 Kuck</option>
+            <option value="./sounds/kick-heavy.wav">
+              Kick Heavy
+            </option>
+          </select>
+        </div>
+        <div class="kick">
+          <div class="pad kick-pad b0"></div>
+          <div class="pad kick-pad b1"></div>
+          <div class="pad kick-pad b2"></div>
+          <div class="pad kick-pad b3"></div>
+          <div class="pad kick-pad b4"></div>
+          <div class="pad kick-pad b5"></div>
+          <div class="pad kick-pad b6"></div>
+          <div class="pad kick-pad b7"></div>
+        </div>
+      </div>
+
+      <div class="snare-track">
+        <div class="controls">
+          <h1>snare</h1>
+          <button data-track="1" class="mute snare-valume">
+            <i class="fas fa-volume-mute"></i>
+          </button>
+          <select name="snare-select" id="snare-select">
+            <option value="./sounds/snare-acoustic01.wav">
+              Classic snare
+            </option>
+            <option value="./sounds/snare-808.wav">808 Snare</option>
+            <option value="./sounds/snare-vinyl02.wav">
+              snare Vinyl
+            </option>
+          </select>
+        </div>
+        <div class="snare">
+          <div class="pad snare-pad b0"></div>
+          <div class="pad snare-pad b1"></div>
+          <div class="pad snare-pad b2"></div>
+          <div class="pad snare-pad b3"></div>
+          <div class="pad snare-pad b4"></div>
+          <div class="pad snare-pad b5"></div>
+          <div class="pad snare-pad b6"></div>
+          <div class="pad snare-pad b7"></div>
+        </div>
+      </div>
+
+      <div class="hihate-track">
+        <div class="controls">
+          <h1>hihate</h1>
+          <button data-track="2" class="mute hihate-valume">
+            <i class="fas fa-volume-mute"></i>
+          </button>
+          <select name="hihate-select" id="hihate-select">
+            <option value="./sounds/hihate-acoustic01.wav">
+              Hihate Acoustic
+            </option>
+            <option value="./sounds/hihate-808.wav">
+              808 hihate
+            </option>
+            <option value="./sounds/hihat-electro.wav">
+              hihate Electro
+            </option>
+          </select>
+        </div>
+        <div class="hihate">
+          <div class="pad hihate-pad b0"></div>
+          <div class="pad hihate-pad b1"></div>
+          <div class="pad hihate-pad b2"></div>
+          <div class="pad hihate-pad b3"></div>
+          <div class="pad hihate-pad b4"></div>
+          <div class="pad hihate-pad b5"></div>
+          <div class="pad hihate-pad b6"></div>
+          <div class="pad hihate-pad b7"></div>
+        </div>
+      </div>
+    </div>
+    <button class="play">play</button>
+    <audio class="kick-sound" src="./sounds/kick-classic.wav"></audio>
+    <audio
+      class="snare-sound"
+      src="./sounds/snare-acoustic01.wav"
+    ></audio>
+    <audio
+      class="hihat-sound"
+      src="./sounds/hihat-electro.wav"
+    ></audio>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"
+      integrity="sha512-F5QTlBqZlvuBEs9LQPqc1iZv2UMxcVXezbHzomzS6Df4MZMClge/8+gXrKw2fl5ysdk4rWjR0vKS7NNkfymaBQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
